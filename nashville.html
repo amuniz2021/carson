@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nashville</title>
+<style>
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #669999;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: #476b6b;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #d1e0e0;
+
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  background-color: #d1e0e0;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f0f5f5;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.active{
+background-color: #b3cccc;
+}
+
+
+body{
+background-color:#a3c2c2;
+}
+
+
+
+h1{
+font-family: Georgia;
+text-decoration-line: underline;
+text-decoration-color: #527a7a;
+}
+
+h2{
+font-family: Georgia;
+}
+
+h3{
+font-family: Georgia;
+}
+
+.p1 {
+font-family: Georgia;
+}
+
+
+</style>
+
+
+<h1 class = "h1">Nashville, Tennesee</h1>
+
+<ul>
+	<li><a href = "index.html">Home</a></li>
+	<li><a href = "carson.html">Carson</a></li>
+	<li class = "dropdown">
+		<a class = "active" href = "adventures.html" class = "dropbtn">Adventures</a>
+		<div class = "dropdown-content">
+		<a href = "nashville.html">Nashville</a>
+		<a href = "indianapolis.html">Indianapolis</a>
+		<a href = "gatlinburg.html">Gatlinburg</a>
+		</div>
+	</li>
+</ul>
+
+</head>
+<body>
+
+<hr>
+
+<div class="row">
+  
+  <div class="column middle">
+    <h2>Nashville</h2>
+    <p class = "p1"><i> Are you from Tennessee? Because you're the only ten I see :). </i>In this webpage I will be putting all things Nashville. Our very first trip together. I was surprised when you agreed to go on this trip with me. I still remember this trip as one of my favorite trips in a new city. </p>
+  <br>
+  <h3> Some More Pics of Us</h3>
+  <div class = "gallery">
+  <a target = "_blank" href = "bob.jpeg">
+    <img src = "bob.jpeg" alt = " Me w/ Bob">
+    </a>
+    <div class = "desc"> Me with the bro, bob. The Lego Man. </div>
+  </div>
+
+  <div class = "gallery">
+  <a target = "_blank" href = "deer.jpeg">
+    <img src = "deer.jpeg" alt = "da deer">
+    </a>
+    <div class = "desc"> Deer we saw during our Hiking Trip </div>
+  </div>
+
+  <div class = "gallery">
+  <a target = "_blank" href = "offgaurd.jpeg">
+    <img src = "offgaurd.jpeg" alt = "Offgaurd pic of Christina" width = "682" height = "400">
+    </a>
+    <div class = "desc"> Here is an offgaurd picture that I took of Christina.</div>
+  </div>
+
+  </div>
+  
+  <div class="column side">
+    <h2>Us With Athena</h2>
+    <img src = "we_tall.jpeg" width = "200" height = "265">
+  </div>
+</div>
+
+
+</body>
+</html>
