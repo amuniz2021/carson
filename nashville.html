@@ -4,6 +4,33 @@
 <title>Nashville</title>
 <style>
 
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: Georgia;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #5c8a8a;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #85adad;
+}
+
 div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
@@ -17,7 +44,7 @@ div.gallery:hover {
 
 div.gallery img {
   width: 100%;
-  height: auto;
+  height: 240px;
 }
 
 div.desc {
@@ -193,9 +220,9 @@ font-family: Georgia;
 
   <div class = "gallery">
   <a target = "_blank" href = "offgaurd.jpeg">
-    <img src = "offgaurd.jpeg" alt = "Offgaurd pic of Christina" width = "682" height = "400">
+    <img src = "offgaurd.jpeg" alt = "Offgaurd pic of Christina">
     </a>
-    <div class = "desc"> Here is an offgaurd picture that I took of Christina.</div>
+    <div class = "desc"> Offgaurd picture that I took of Christina.</div>
   </div>
 
   </div>
@@ -206,6 +233,34 @@ font-family: Georgia;
   </div>
 </div>
 
+  <div class = "column middle">
+     <h3>Upload Your Own Photos</h3>
+	<p class = "p1"> I don't have many photos of our Nashville trip, so I'll have this form open if you want to upload you're own photos. </p1>
+
+<div>
+  <form action="/action_page.php">
+    <label for="fname">Photo Description</label>
+    <input type="text" id="fname" name="firstname" placeholder="Something Slick..">
+
+    <label for="photo">Upload Media</label>
+    <input type="text" id="Photo" name="photo" placeholder="Will add once I learn...">
+
+    <label for = "phtype"> Format Type</label><br>
+    <br> 
+    <input type = "radio" id = "jpg" name = "phtype" value = "jpg">
+      <label for = "jpg"> JPG </label>
+    <input type = "radio" id = "heif" name = "phtype" value = "heif">
+      <label for = "heif"> HEIF </label>
+    <input type = "radio" id = "gif" name = "phtype" value = "gif">
+      <label for = "gif"> GIF </label>
+    <input type = "radio" id = "mp4" name = "phtype" value = "mp4">
+      <label for = "mp4"> MP4 </label>
+    <input type = "radio" id = "mov" name = "phtype" value = "mov">
+      <label for = "heif"> MOV </label>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
 
 </body>
 </html>

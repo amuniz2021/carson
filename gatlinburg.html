@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gatlinburg</title>
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #669999;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: #476b6b;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #d1e0e0;
+
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  background-color: #d1e0e0;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f0f5f5;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.active{
+background-color: #b3cccc;
+}
+
+
+body{
+background-color:#a3c2c2;
+}
+
+
+
+h1{
+font-family: Georgia;
+text-decoration-line: underline;
+text-decoration-color: #527a7a;
+}
+
+h2{
+font-family: Georgia;
+}
+
+h3{
+font-family: Georgia;
+}
+
+.p1 {
+font-family: Georgia;
+}
+
+
+
+</style>
+
+<head>
+
+<h1 class = "h1">Gatlinburg, Tennesee</h1>
+
+<ul>
+	<li><a href = "index.html">Home</a></li>
+	<li><a href = "carson.html">Carson</a></li>
+	<li class = "dropdown">
+		<a class = "active" href = "adventures.html" class = "dropbtn">Adventures</a>
+		<div class = "dropdown-content">
+		<a href = "nashville.html">Nashville</a>
+		<a href = "indianapolis.html">Indianapolis</a>
+		<a href = "gatlinburg.html">Gatlinburg</a>
+		</div>
+	</li>
+</ul>
+
+</head>
+
+<body>
+<hr>
+
+<div class = "row">
+
+  <div class = "column side">
+    <h2>Fun Fact</h2>
+	<p class = "p1">Gatlinburg is the 2nd most popular wedding destination in the United States. </p1>
+  </div>
+
+  <div class = "column middle">
+     <h2>Bear Country</h2>
+	<p class = "p1"> Ah yes, the Gatlingburg, Tennessee. The place with so many views and a lot of mountains. </p1>
+  </div>
+
+  <div class = "column side">
+    <h2> side 2 </h2>
+  </div>
+
+
+</body>
+</html
